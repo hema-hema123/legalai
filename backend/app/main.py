@@ -2,6 +2,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # Import your route modules
 from app.routes import upload_route, extract_route, query_route, ai_route
 
